@@ -1,0 +1,145 @@
+@font-face {
+    font-family: p;
+    src: url(Poppins-Medium.ttf);
+}body {
+    margin: 0;
+    font-family: p;
+    background-color: #f2f4f7;
+}
+
+#parents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#checkbox-container{
+    height: 70px;
+    overflow-y: auto;
+
+}
+
+#one {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-top: 36px;
+    overflow-y: auto;
+}
+
+#two {
+    margin-left: 320px;
+    background-color: #f2f4f7;
+    padding-left: 32px;
+    overflow-x: auto;
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 300px;
+}
+
+
+.title1::placeholder {
+    font-size: 25px;
+    font-family:p;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+.title2::placeholder {
+    font-size: 16px;
+    font-family:p;
+    font-weight: 500;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #000000;
+}
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #000000;
+}
+
+
+#one::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+#two::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+html::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+
+.task {
+    box-shadow: 0px 0.5px 2px 0px rgba(16, 24, 40, 0.3);
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    background-color: rgba(252, 252, 253, 1);
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-top: 24px;
+}
+
+button {
+    font-family:p;
+    border: 0;
+    border-radius: 6px;
+    height: 33px;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+
+
+@media (max-width: 500px) {
+    #one {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    #two {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        padding-left: 20px;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .column {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .task {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .title2 {
+        width: 100%;
+    }
+}
